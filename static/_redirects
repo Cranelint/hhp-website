@@ -1,0 +1,103 @@
+# Alte WordPress-URLs -> Neue Hugo-URLs (301 Permanent Redirects)
+
+# Unternehmen
+/uber-uns/                       /unternehmen/ueber-uns/          301
+/uber-uns                        /unternehmen/ueber-uns/          301
+/ansprechpartner/                /unternehmen/ansprechpartner/    301
+/ansprechpartner                 /unternehmen/ansprechpartner/    301
+/qualifikationen/                /unternehmen/qualifikationen/    301
+/qualifikationen                 /unternehmen/qualifikationen/    301
+/geschaftsleitung/               /unternehmen/geschaeftsleitung/  301
+/geschaftsleitung                /unternehmen/geschaeftsleitung/  301
+
+# Leistungen
+/brandschutzplanung/             /leistungen/brandschutzplanung/  301
+/brandschutzplanung              /leistungen/brandschutzplanung/  301
+/brandschutzprufung/             /leistungen/brandschutzpruefung/ 301
+/brandschutzprufung              /leistungen/brandschutzpruefung/ 301
+
+# Portfolio-Kategorien -> Referenzen Taxonomie
+/portfolio_category/verwaltung       /kategorie/büro-und-verwaltung/           301
+/portfolio_category/denkmalschutz    /kategorie/denkmalschutz/                 301
+/portfolio_category/wissenschaft     /kategorie/wissenschaft-und-forschung/    301
+/portfolio_category/hotels           /kategorie/hotels-und-tagungszentren/     301
+/portfolio_category/industriebauten  /kategorie/industriebauten/               301
+/portfolio_category/krankenhauser    /kategorie/krankenhäuser-und-pflegeheime/ 301
+/portfolio_category/stadien          /kategorie/stadien-und-versammlungsstätten/ 301
+/portfolio_category/verkaufsstatten  /kategorie/verkaufsstätten/               301
+/portfolio_category/wohngebaude      /kategorie/wohn--und-geschäftsgebäude/    301
+/portfolio_category/schulen          /kategorie/schulen-und-kindertagesstätten/ 301
+
+# Portfolio Einzelseiten -> Referenzen
+/portfolio/franklin-hochpunkt-mannheim/                         /referenzen/franklin-hochpunkt-mannheim/    301
+/portfolio/generalsanierung-kuenstlerhaus-nuernberg-3-bauabschnitt/  /referenzen/kuenstlerhaus-nuernberg/   301
+/portfolio/leonardo-hotel-koeln/                                /referenzen/leonardo-hotel-koeln/           301
+/portfolio/firmenzentrale-pfalzwerke/                           /referenzen/firmenzentrale-pfalzwerke/      301
+/portfolio/sanierung-stadthalle-braunschweig/                   /referenzen/stadthalle-braunschweig/        301
+/portfolio/neubau-havel-therme-werder/                          /referenzen/havel-therme-werder/            301
+/portfolio/neubau-technisches-rathaus-mannheim/                 /referenzen/technisches-rathaus-mannheim/   301
+/portfolio/intersport-heilbronn/                                /referenzen/intersport-heilbronn/           301
+/portfolio/hauptfeuerwache-karlsruhe/                           /referenzen/hauptfeuerwache-karlsruhe/      301
+/portfolio/grn-klinik-schwetzingen/                             /referenzen/grn-klinik-schwetzingen/        301
+/portfolio/neugestaltung-senckenberg-frankfurt/                  /referenzen/senckenberg-frankfurt/          301
+/portfolio/dhl-logistikhallen-diverse-standorte/                /referenzen/dhl-logistikzentren/            301
+/portfolio/neubau-buerogebaeude-mit-kantine-und-tiefgarage-ek3/ /referenzen/buerogebaeude-ek3-bad-homburg/  301
+/portfolio/ecb/                                                 /referenzen/europaeische-zentralbank-frankfurt/ 301
+/portfolio/popakademie-mannheim/                                /referenzen/popakademie-mannheim/           301
+/portfolio/mafinex-technologiezentrum-mannheim-2/               /referenzen/mafinex-technologiezentrum-mannheim/ 301
+/portfolio/sky-labs-heidelberg/                                 /referenzen/sky-labs-heidelberg/            301
+/portfolio/carl-benz-center-stuttgart-2/                        /referenzen/carl-benz-center-stuttgart/     301
+/portfolio/restrukturierung-der-burohochhauser-der-igemet-frankfurtmain/ /referenzen/ig-metall-frankfurt/   301
+/portfolio/buro-und-konferenzzentrum-basf-in-ludwigshafen/      /referenzen/basf-business-center-d105/     301
+/portfolio/feierabendhaus-ludwigshafen/                         /referenzen/basf-feierabendhaus-ludwigshafen/ 301
+/portfolio/schauspielhaus-nurnberg/                             /referenzen/schauspielhaus-nuernberg/       301
+/portfolio/haus-am-dom-frankfurt-main/                          /referenzen/haus-am-dom-frankfurt/          301
+/portfolio/staatstheater-nurnberg-schauspiel-und-opernhaus/     /referenzen/staatstheater-nuernberg/        301
+/portfolio/hessisches-landesmuseum-darmstadt/                   /referenzen/hessisches-landesmuseum-darmstadt/ 301
+/portfolio/octapharma-heidelberg/                               /referenzen/octapharma-heidelberg/          301
+/portfolio/otto-stern-zentrum-frankfurt-am-main/                /referenzen/otto-stern-zentrum-frankfurt/   301
+/portfolio/bibliothek-21-stuttgart/                             /referenzen/bibliothek-21-stuttgart/        301
+/portfolio/cipmm-homburg-saar/                                 /referenzen/cipmm-homburg-saar/            301
+/portfolio/mpi-mainz-max-planck-institut/                      /referenzen/mpi-mainz/                     301
+/portfolio/kontorhaus-braunschweig/                            /referenzen/kontorhaus-braunschweig/        301
+/portfolio/hotel-und-arztehaus-baden-baden/                    /referenzen/hotel-aerztehaus-baden-baden/   301
+/portfolio/tannerhof-bayrischzell/                             /referenzen/tannerhof-bayrischzell/         301
+/portfolio/hotel-binshof-speyer/                               /referenzen/lindner-hotel-binshof-speyer/   301
+/portfolio/basf-z68-hotel-rene-bohn-ludwigshafenrhein/         /referenzen/basf-hotel-rene-bohn/          301
+/portfolio/g-hotel-wurzburg/                                   /referenzen/g-hotel-wuerzburg/             301
+/portfolio/heger-gus-enkenbach/                                /referenzen/heger-gus-enkenbach/           301
+/portfolio/gabor-mindelheim/                                   /referenzen/gabor-mindelheim/              301
+/portfolio/hermes-logistikzentren-diverse-standorte/           /referenzen/hermes-logistikzentren/        301
+/portfolio/tiefdruckerei-burda-offenbach/                      /referenzen/tiefdruckerei-burda-offenbach/  301
+/portfolio/fachpflegezentrum-wiessloch/                        /referenzen/fachpflegezentrum-wiesloch/    301
+/portfolio/referenzliste-krankenhauserpflegeheime/             /referenzen/westpfalz-klinikum-kaiserslautern/ 301
+/portfolio/zentrum-fur-kinder-und-jugendmedizin-heidelberg/    /referenzen/kinderklinik-heidelberg/       301
+/portfolio/sanierung-universitatsklinikum-der-johann-wolfgang-goethe-universitat-frankfurtmain-mehrere-gebaude/ /referenzen/uniklinikum-frankfurt/ 301
+/portfolio/steigerwaldstadion-erfurt/                          /referenzen/steigerwaldstadion-erfurt/     301
+/portfolio/thermalbad-rilchingen-hannweiler/                   /referenzen/thermalbad-rilchingen-hannweiler/ 301
+/portfolio/fuerthermare-fuhrt-thermalbad-fuhrt/                /referenzen/fuerthermare-fuerth/           301
+/portfolio/stadthalle-reutlingen/                              /referenzen/stadthalle-reutlingen/         301
+/portfolio/sap-arena-mannheim/                                 /referenzen/sap-arena-mannheim/            301
+/portfolio/elbphilharmonie-hamburg-2/                          /referenzen/elbphilharmonie-hamburg/       301
+/portfolio/einkaufszentrum-lilien-caree/                       /referenzen/lilien-caree-wiesbaden/        301
+/portfolio/mercado-nurnberg/                                   /referenzen/mercado-nuernberg/             301
+/portfolio/kaufhaus-breuninger-stuttgart/                      /referenzen/breuninger-stuttgart/          301
+/portfolio/skyline-plaza-in-frankfurtmain/                     /referenzen/skyline-plaza-frankfurt/       301
+/portfolio/wohnbebauung-mit-tiefgarage-ludwigshafenrhein/      /referenzen/wohnbebauung-ludwigshafen/    301
+/portfolio/untere-atzemer-frankfurt-am-main-ehm-bruderkrankenhaus/ /referenzen/untere-atzemer-frankfurt/  301
+/portfolio/wohnanlage-riedberg/                                /referenzen/wohnanlage-riedberg/           301
+/portfolio/eastside-estate-in-frankfurtmain-2/                 /referenzen/eastside-estate-frankfurt/     301
+/portfolio/schul-und-begegnungszentrum-gadamerplatz-heidelberg/ /referenzen/gadamerplatz-heidelberg/      301
+/portfolio/kindertagesstatte-der-unionsgemeinde-mannheim/      /referenzen/kita-unionsgemeinde-mannheim/  301
+/portfolio/realschule-mit-sporthalle-gmund/                    /referenzen/realschule-gmund/              301
+/portfolio/gymnasium-fachoberschule-und-sporthalle-holzkirchen/ /referenzen/gymnasium-holzkirchen/        301
+/portfolio/grundschule-mit-sporthalle-am-rebstock-frankfurtmain/ /referenzen/grundschule-rebstock-frankfurt/ 301
+
+# Downloads (alte WP-Upload-Pfade)
+/wp-content/uploads/2024/01/HHPS_Kalender_Original_2024.pdf    /downloads/HHPS_Kalender_Original_2024.pdf  301
+/wp-content/uploads/2024/01/HHPS_Kalender_Farbe_2024.pdf       /downloads/HHPS_Kalender_Farbe_2024.pdf     301
+/wp-content/uploads/2021/01/Stellenausschreibung-Projektingenieur-2020.pdf /downloads/karriere/Stellenausschreibung-Projektingenieur-2020.pdf 301
+
+# Entfallene Seiten
+/angebotsanfrage/                /kontakt/                        301
+/angebotsanfrage                 /kontakt/                        301
