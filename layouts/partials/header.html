@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo" aria-label="HHP Süd – Startseite">
+      <img src="/images/logo.png" alt="HHP Süd Sachverständige für Brandschutz" width="200" height="60">
+    </a>
+    <details class="nav-mobile">
+      <summary aria-label="Menü öffnen">
+        <span class="hamburger" aria-hidden="true"></span>
+      </summary>
+      <nav class="nav-dropdown" aria-label="Hauptnavigation mobil">
+        {{ partial "nav-items.html" . }}
+      </nav>
+    </details>
+    <nav class="nav-desktop" aria-label="Hauptnavigation">
+      {{ partial "nav-items.html" . }}
+    </nav>
+  </div>
+</header>

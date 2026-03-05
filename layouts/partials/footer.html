@@ -1,0 +1,25 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <p class="footer-company">{{ .Site.Params.company }}</p>
+      <address>
+        {{ .Site.Params.address }}<br>
+        Tel: <a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a><br>
+        Fax: {{ .Site.Params.fax }}<br>
+        E-Mail: <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+      </address>
+    </div>
+    <div class="footer-col">
+      <nav aria-label="Footer-Navigation">
+        <ul class="footer-nav">
+          {{ range .Site.Menus.footer }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; {{ now.Year }} {{ .Site.Params.company }}</p>
+  </div>
+</footer>
