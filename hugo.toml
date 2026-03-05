@@ -1,0 +1,108 @@
+baseURL = 'https://hhp-sued.de/'
+languageCode = 'de'
+defaultContentLanguage = 'de'
+title = 'HHP Süd – Sachverständige für Brandschutz'
+
+[params]
+  description = 'HHP Süd Sachverständige für Brandschutz GmbH – Ihre Experten für Brandschutz in Ludwigshafen am Rhein'
+  phone = '+49 621 591658-0'
+  fax = '+49 621 591658-20'
+  email = 'info@hhp-sued.de'
+  address = 'Ludwigstraße 54 b, 67059 Ludwigshafen am Rhein'
+  company = 'HHP Süd Sachverständige für Brandschutz GmbH'
+
+[taxonomies]
+  kategorie = 'kategorie'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+
+[outputs]
+  home = ['HTML']
+  section = ['HTML']
+  taxonomy = ['HTML']
+  term = ['HTML']
+
+[permalinks]
+  referenzen = '/referenzen/:slug/'
+
+[menu]
+  [[menu.main]]
+    identifier = 'unternehmen'
+    name = 'Unternehmen'
+    url = '/unternehmen/'
+    weight = 1
+  [[menu.main]]
+    identifier = 'ueber-uns'
+    name = 'Über uns'
+    parent = 'unternehmen'
+    url = '/unternehmen/ueber-uns/'
+    weight = 1
+  [[menu.main]]
+    identifier = 'ansprechpartner'
+    name = 'Ansprechpartner'
+    parent = 'unternehmen'
+    url = '/unternehmen/ansprechpartner/'
+    weight = 2
+  [[menu.main]]
+    identifier = 'qualifikationen'
+    name = 'Qualifikationen'
+    parent = 'unternehmen'
+    url = '/unternehmen/qualifikationen/'
+    weight = 3
+  [[menu.main]]
+    identifier = 'geschaeftsleitung'
+    name = 'Geschäftsleitung'
+    parent = 'unternehmen'
+    url = '/unternehmen/geschaeftsleitung/'
+    weight = 4
+  [[menu.main]]
+    identifier = 'leistungen'
+    name = 'Leistungen'
+    url = '/leistungen/'
+    weight = 2
+  [[menu.main]]
+    identifier = 'brandschutzplanung'
+    name = 'Brandschutzplanung'
+    parent = 'leistungen'
+    url = '/leistungen/brandschutzplanung/'
+    weight = 1
+  [[menu.main]]
+    identifier = 'brandschutzpruefung'
+    name = 'Brandschutzprüfung'
+    parent = 'leistungen'
+    url = '/leistungen/brandschutzpruefung/'
+    weight = 2
+  [[menu.main]]
+    identifier = 'referenzen'
+    name = 'Referenzen'
+    url = '/referenzen/'
+    weight = 3
+  [[menu.main]]
+    identifier = 'kontakt'
+    name = 'Kontakt'
+    url = '/kontakt/'
+    weight = 4
+
+  [[menu.footer]]
+    name = 'Karriere'
+    url = '/karriere/'
+    weight = 1
+  [[menu.footer]]
+    name = 'Downloads'
+    url = '/downloads/'
+    weight = 2
+  [[menu.footer]]
+    name = 'Kontakt'
+    url = '/kontakt/'
+    weight = 3
+  [[menu.footer]]
+    name = 'Impressum'
+    url = '/impressum/'
+    weight = 4
+  [[menu.footer]]
+    name = 'Datenschutz'
+    url = '/datenschutz/'
+    weight = 5
