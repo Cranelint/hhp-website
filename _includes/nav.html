@@ -1,0 +1,20 @@
+<ul class="nav-list">
+  {% for item in site.navigation.main %}
+    {% if item.children %}
+    <li class="nav-item has-children">
+      <details class="nav-submenu-toggle">
+        <summary>{{ item.name }}</summary>
+        <ul class="nav-submenu">
+          {% for child in item.children %}
+          <li><a href="{{ child.url | relative_url }}"{% if page.url == child.url %} aria-current="page"{% endif %}>{{ child.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </details>
+    </li>
+    {% else %}
+    <li class="nav-item">
+      <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.name }}</a>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>

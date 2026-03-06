@@ -1,0 +1,119 @@
+title: "HHP Süd – Sachverständige für Brandschutz"
+description: "HHP Süd Sachverständige für Brandschutz GmbH – Ihre Experten für Brandschutz in Ludwigshafen am Rhein"
+url: "https://cranelint.github.io"
+baseurl: "/hhp-website"
+lang: de
+
+# Site params
+company: "HHP Süd Sachverständige für Brandschutz GmbH"
+phone: "+49 621 591658-0"
+fax: "+49 621 591658-20"
+email: "info@hhp-sued.de"
+address: "Ludwigstraße 54 b, 67059 Ludwigshafen am Rhein"
+
+# Build
+markdown: kramdown
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - MIGRATION.md
+  - migration/
+  - vendor/
+
+# Collections
+collections:
+  referenzen:
+    output: true
+    permalink: /referenzen/:slug/
+  karriere:
+    output: false
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "referenzen"
+    values:
+      layout: "referenz"
+  - scope:
+      path: ""
+      type: "karriere"
+    values:
+      layout: null
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+plugins:
+  - jekyll-redirect-from
+
+# Categories for references
+kategorien:
+  - name: "Büro und Verwaltung"
+    slug: "buero-und-verwaltung"
+    description: "Brandschutzkonzepte für Verwaltungsgebäude, Firmenzentralen und Bürohochhäuser. Wir berücksichtigen flexible Nutzungskonzepte, Fluchtwegplanung und die Integration moderner Sicherheitstechnik."
+  - name: "Denkmalschutz"
+    slug: "denkmalschutz"
+    description: "Brandschutz im denkmalgeschützten Bestand erfordert besonderes Fingerspitzengefühl. Wir entwickeln Lösungen, die historische Bausubstanz bewahren und gleichzeitig zeitgemäße Sicherheitsstandards erfüllen."
+  - name: "Hotels und Tagungszentren"
+    slug: "hotels-und-tagungszentren"
+    description: "Hotels und Tagungsstätten stellen hohe Anforderungen an Fluchtwegsicherung und Personenschutz. Unsere Konzepte berücksichtigen wechselnde Nutzungen, Beherbergung und Veranstaltungsbetrieb."
+  - name: "Industriebauten"
+    slug: "industriebauten"
+    description: "Industrielle Sonderbauten wie Logistikzentren, Produktionshallen und Druckereien erfordern maßgeschneiderte Brandschutzkonzepte unter Berücksichtigung von Brandlasten, Betriebsabläufen und Versicherungsanforderungen."
+  - name: "Krankenhäuser und Pflegeheime"
+    slug: "krankenhaeuser-und-pflegeheime"
+    description: "Kliniken und Pflegeeinrichtungen gehören zu den anspruchsvollsten Sonderbauten. Unsere Konzepte sichern die horizontale Evakuierung nicht mobiler Personen und berücksichtigen komplexe technische Infrastruktur."
+  - name: "Schulen und Kindertagesstätten"
+    slug: "schulen-und-kindertagesstaetten"
+    description: "Bildungseinrichtungen erfordern klare Fluchtwegekonzepte und kindgerechte Sicherheitslösungen. Wir planen Brandschutz für Schulneubauten, Erweiterungen und Bestandssanierungen."
+  - name: "Stadien und Versammlungsstätten"
+    slug: "stadien-und-versammlungsstaetten"
+    description: "Versammlungsstätten wie Arenen, Theater und Stadthallen zählen zu unseren Kernkompetenzen. Wir konzipieren Brandschutz für hohe Personenzahlen, flexible Bespielungen und komplexe Rettungswegführungen."
+  - name: "Verkaufsstätten"
+    slug: "verkaufsstaetten"
+    description: "Einkaufszentren und Verkaufsstätten sind Sonderbauten mit hohem Publikumsverkehr. Unsere Konzepte berücksichtigen offene Raumstrukturen, Brandabschnittsbildung und die Anforderungen der Verkaufsstättenverordnung."
+  - name: "Wissenschaft und Forschung"
+    slug: "wissenschaft-und-forschung"
+    description: "Forschungseinrichtungen und Laborgebäude erfordern individuelle Brandschutzlösungen. Wir berücksichtigen besondere Gefahrstoffe, sensible Nutzungen und die Anforderungen an technische Gebäudeausrüstung."
+  - name: "Wohn- und Geschäftsgebäude"
+    slug: "wohn-und-geschaeftsgebaeude"
+    description: "Wohn- und Geschäftshäuser mit gemischter Nutzung stellen besondere Anforderungen an die Brandabschnittsbildung und Rettungswegführung. Wir planen Brandschutz für Neubauten und Bestandsumbauten."
+
+# Navigation
+navigation:
+  main:
+    - name: "Unternehmen"
+      children:
+        - name: "Über uns"
+          url: /unternehmen/ueber-uns/
+        - name: "Ansprechpartner"
+          url: /unternehmen/ansprechpartner/
+        - name: "Qualifikationen"
+          url: /unternehmen/qualifikationen/
+        - name: "Geschäftsleitung"
+          url: /unternehmen/geschaeftsleitung/
+    - name: "Leistungen"
+      children:
+        - name: "Brandschutzplanung"
+          url: /leistungen/brandschutzplanung/
+        - name: "Brandschutzprüfung"
+          url: /leistungen/brandschutzpruefung/
+    - name: "Referenzen"
+      url: /referenzen/
+    - name: "Kontakt"
+      url: /kontakt/
+  footer:
+    - name: "Karriere"
+      url: /karriere/
+    - name: "Downloads"
+      url: /downloads/
+    - name: "Kontakt"
+      url: /kontakt/
+    - name: "Impressum"
+      url: /impressum/
+    - name: "Datenschutz"
+      url: /datenschutz/

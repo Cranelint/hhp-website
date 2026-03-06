@@ -1,0 +1,38 @@
+---
+layout: default
+---
+{% assign kat_info = site.kategorien | where: "slug", page.kategorie_slug | first %}
+<section class="page">
+  <div class="container">
+    <header class="page-header">
+      <h1>Referenzen: {{ page.title }}</h1>
+      {% if kat_info.description %}<p class="lead">{{ kat_info.description }}</p>{% endif %}
+    </header>
+
+    <nav class="category-nav" aria-label="Referenz-Kategorien">
+      <ul class="category-list">
+        {% for kat in site.kategorien %}
+        {% assign kat_refs = site.referenzen | where_exp: "ref", "ref.kategorie contains kat.name" %}
+        <li><a href="{{ '/kategorie/' | append: kat.slug | append: '/' | relative_url }}"{% if kat.slug == page.kategorie_slug %} aria-current="page"{% endif %}>{{ kat.name }} <span class="count">({{ kat_refs.size }})</span></a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    {% assign filtered_refs = site.referenzen | where_exp: "ref", "ref.kategorie contains page.title" %}
+    <div class="project-grid">
+      {% for ref in filtered_refs %}
+      <a href="{{ ref.url | relative_url }}" class="project-card">
+        {% if ref.images %}
+        <div class="project-card-image">
+          <img src="{{ ref.images[0] | relative_url }}" alt="{{ ref.title }}" loading="lazy" width="400" height="300">
+        </div>
+        {% endif %}
+        <div class="project-card-body">
+          <h2>{{ ref.title }}</h2>
+          {% if ref.location %}<p class="project-card-location">{{ ref.location }}</p>{% endif %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

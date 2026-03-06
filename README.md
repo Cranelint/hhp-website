@@ -1,72 +1,62 @@
 # HHP Süd – Website
 
-Statische Website der HHP Süd Sachverständige für Brandschutz GmbH, gebaut mit [Hugo](https://gohugo.io/).
+Statische Website der HHP Süd Sachverständige für Brandschutz GmbH, gebaut mit [Jekyll](https://jekyllrb.com/) und gehostet auf [GitHub Pages](https://pages.github.com/).
 
 ## Voraussetzungen
 
-- [Hugo Extended](https://gohugo.io/installation/) v0.120.0 oder neuer
+- [Ruby](https://www.ruby-lang.org/) 3.0 oder neuer
+- [Bundler](https://bundler.io/)
 
 ## Lokale Entwicklung
 
 ```bash
-# Entwicklungsserver starten
-hugo server
+# Abhängigkeiten installieren
+bundle install
 
-# Seite unter http://localhost:1313 aufrufen
+# Entwicklungsserver starten
+bundle exec jekyll serve
+
+# Seite unter http://localhost:4000/hhp-website/ aufrufen
 ```
 
 ## Build
 
 ```bash
 # Produktions-Build
-hugo --minify
+bundle exec jekyll build
 
-# Output-Verzeichnis: public/
+# Output-Verzeichnis: _site/
 ```
 
-## Cloudflare Pages Deployment
+## GitHub Pages Deployment
 
-| Einstellung | Wert |
-|-------------|------|
-| Build command | `hugo --minify` |
-| Build output directory | `public` |
-| Hugo version | `0.157.0` (oder neuer) |
+Die Seite wird automatisch über GitHub Pages deployt. Bei jedem Push auf `main` baut GitHub Pages die Seite neu.
 
-Die Hugo-Version kann über die Umgebungsvariable `HUGO_VERSION` gesetzt werden:
-
-```
-HUGO_VERSION = "0.157.0"
-```
+**Einstellungen:**
+- Repository Settings → Pages → Source: Deploy from a branch → `main` / `/ (root)`
 
 ## Projektstruktur
 
 ```
 .
-├── assets/css/          # CSS (wird von Hugo verarbeitet/minifiziert)
-├── content/             # Markdown-Inhalte
-│   ├── referenzen/      # Referenzprojekte
-│   ├── unternehmen/     # Unternehmensseiten
-│   ├── leistungen/      # Leistungsseiten
-│   ├── kontakt/         # Kontaktseite
-│   ├── karriere/        # Karriereseite
-│   ├── downloads/       # Downloads-Seite
-│   ├── impressum/       # Impressum
-│   └── datenschutz/     # Datenschutzerklärung
-├── layouts/             # Hugo-Templates
-│   ├── _default/        # Standard-Layouts
-│   ├── referenzen/      # Referenz-spezifische Layouts
-│   ├── partials/        # Wiederverwendbare Komponenten
-│   └── taxonomy/        # Kategorie-Layouts
-├── static/              # Statische Dateien (1:1 kopiert)
-│   ├── images/          # Bilder
-│   ├── downloads/       # PDF-Downloads
-│   ├── _headers         # Cloudflare Pages Security Headers
-│   └── _redirects       # Cloudflare Pages Redirects
-├── migration/           # Migrationsdokumentation
-│   ├── inventory.md     # Inventar der Altseite
-│   ├── url-map.csv      # URL-Mapping alt -> neu
-│   └── qa-report.md     # Qualitätssicherungsbericht
-└── hugo.toml            # Hugo-Konfiguration
+├── _config.yml          # Jekyll-Konfiguration
+├── _layouts/            # HTML-Layouts
+├── _includes/           # Wiederverwendbare Komponenten (Header, Footer, Icons)
+├── _referenzen/         # Referenzprojekte (Jekyll Collection)
+├── _karriere/           # Stellenangebote (Jekyll Collection)
+├── css/                 # Stylesheets
+├── images/              # Bilder
+│   └── referenzen/      # Projektbilder
+├── downloads/           # PDF-Downloads
+├── unternehmen/         # Unternehmensseiten
+├── leistungen/          # Leistungsseiten
+├── kontakt/             # Kontaktseite
+├── karriere/            # Karriereseite
+├── kategorie/           # Referenz-Kategorieseiten
+├── impressum/           # Impressum
+├── datenschutz/         # Datenschutzerklärung
+├── Gemfile              # Ruby-Abhängigkeiten
+└── MIGRATION.md         # Hinweise für den Umzug POC → Live
 ```
 
 ## Besonderheiten
@@ -74,5 +64,5 @@ HUGO_VERSION = "0.157.0"
 - **Zero JavaScript**: Die Seite funktioniert komplett ohne JavaScript
 - **Keine Cookies**: Keine Cookies, kein Tracking, keine externen Requests
 - **DSGVO-konform**: Keine Third-Party-Embeds, keine externen Fonts
-- **Security Headers**: CSP, HSTS, X-Frame-Options etc. via `_headers`
 - **Mobile Navigation**: Realisiert mit `<details>`/`<summary>` (kein JS)
+- **Redirects**: Alte WordPress-URLs werden über `jekyll-redirect-from` Plugin umgeleitet

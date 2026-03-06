@@ -1,0 +1,25 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <p class="footer-company">{{ site.company }}</p>
+      <address>
+        {{ site.address }}<br>
+        Tel: <a href="tel:{{ site.phone }}">{{ site.phone }}</a><br>
+        Fax: {{ site.fax }}<br>
+        E-Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </address>
+    </div>
+    <div class="footer-col">
+      <nav aria-label="Footer-Navigation">
+        <ul class="footer-nav">
+          {% for item in site.navigation.footer %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; {{ "now" | date: "%Y" }} {{ site.company }}</p>
+  </div>
+</footer>
