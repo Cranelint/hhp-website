@@ -3,6 +3,8 @@ title: "Sanierung Stadthalle Braunschweig"
 slug: "stadthalle-braunschweig"
 description: "Sanierung der denkmalgeschützten Stadthalle Braunschweig"
 weight: 5
+featured: true
+complete: true
 client: "Stadt Braunschweig, Platz der Deutschen Einheit 1, 38100 Braunschweig"
 architect: "PFP Planungs GmbH, Wendentorwall 16, 38100 Braunschweig"
 location: "Braunschweig"

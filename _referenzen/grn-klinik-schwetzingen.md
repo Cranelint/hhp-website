@@ -3,6 +3,8 @@ title: "GRN-Klinik, Schwetzingen"
 slug: "grn-klinik-schwetzingen"
 description: "Brandschutzkonzept für Bestand und Umbau bei laufendem Betrieb"
 weight: 10
+featured: true
+complete: true
 client: "GRN-Klinik, Schwetzingen"
 architect: "Strauß Architekten, Stuttgart"
 location: "Schwetzingen"

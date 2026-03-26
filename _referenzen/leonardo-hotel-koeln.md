@@ -3,6 +3,8 @@ title: "Leonardo Hotel Köln"
 slug: "leonardo-hotel-koeln"
 description: "Hotel mit Restaurant und Tagungsräumen"
 weight: 3
+featured: true
+complete: true
 client: "MTK-SN Invest 1 GmbH"
 architect: "Hochform Architekten ZT GmbH, Wien"
 location: "Köln"

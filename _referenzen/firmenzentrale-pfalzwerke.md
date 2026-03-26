@@ -3,6 +3,8 @@ title: "Firmenzentrale Pfalzwerke"
 slug: "firmenzentrale-pfalzwerke"
 description: "Bürogebäude mit Tiefgarage und Versammlungsstätte"
 weight: 4
+featured: true
+complete: true
 client: "Pro Concept Projektbau Wredestraße GmbH"
 architect: "GJL Architekten Karlsruhe"
 location: "Ludwigshafen am Rhein"

@@ -3,6 +3,8 @@ title: "Generalsanierung Künstlerhaus Nürnberg – 3. Bauabschnitt"
 slug: "kuenstlerhaus-nuernberg"
 description: "Generalsanierung eines denkmalgeschützten Gebäudes bei laufendem Betrieb"
 weight: 2
+featured: true
+complete: true
 client: "Stadt Nürnberg – Hochbauamt, Marientorgraben 11, 90402 Nürnberg"
 architect: "Florian Nagler Architekten GmbH, München"
 location: "Nürnberg"

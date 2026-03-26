@@ -3,6 +3,8 @@ title: "Franklin Hochpunkt Mannheim"
 slug: "franklin-hochpunkt-mannheim"
 description: "Wohnhochhaus aus zwei Türmen mit Brückenverbindung, Sockel und Tiefgarage"
 weight: 1
+featured: true
+complete: true
 client: "GBG Mannheim"
 architect: "haas cook zemmrich STUDIO2050"
 location: "Mannheim"

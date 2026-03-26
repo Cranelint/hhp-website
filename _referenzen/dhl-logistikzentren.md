@@ -3,6 +3,8 @@ title: "DHL Logistikzentren, diverse Standorte"
 slug: "dhl-logistikzentren"
 description: "Brandschutzkonzepte für diverse DHL-Logistikstandorte"
 weight: 12
+featured: true
+complete: true
 client: "Casaplan Seeliger GmbH, Saarbrücken"
 architect: "Diverse"
 location: "Diverse Standorte"

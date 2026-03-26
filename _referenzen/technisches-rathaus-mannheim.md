@@ -3,6 +3,8 @@ title: "Neubau Technisches Rathaus Mannheim"
 slug: "technisches-rathaus-mannheim"
 description: "Neubau des Technischen Rathauses mit Hochhaus und Versammlungsstätte"
 weight: 7
+featured: true
+complete: true
 client: "GBG Mannheimer Wohnungsbaugesellschaft mbH, Mannheim"
 architect: "schneider+schumacher Planungsgesellschaft mbH, Frankfurt am Main"
 location: "Mannheim"

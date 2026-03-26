@@ -3,6 +3,8 @@ title: "Neubau Havel-Therme Werder"
 slug: "havel-therme-werder"
 description: "Neubau eines Thermalbades mit Sauna- und Gastronomiebereich"
 weight: 6
+featured: true
+complete: true
 client: "Schauer & Co GmbH, Bahnhofstraße 18, 88662 Überlingen"
 architect: "Geising + Böker GmbH Architekten BDA, Hamburg"
 location: "Werder"

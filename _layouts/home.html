@@ -69,6 +69,13 @@ layout: default
         <a href="{{ '/leistungen/brandschutzpruefung/' | relative_url }}" class="link-arrow">Mehr erfahren</a>
       </div>
     </div>
+    <div class="cta-block">
+      <div class="cta-block-text">
+        <h3>Brandschutzanfrage stellen</h3>
+        <p>Haben Sie ein Projekt, das fachkundige Begleitung braucht? Wir melden uns schnell und unkompliziert.</p>
+      </div>
+      <a href="mailto:info@hhp-sued.de" class="btn btn-primary">Brandschutzanfrage senden</a>
+    </div>
   </div>
 </section>
 
@@ -76,8 +83,8 @@ layout: default
   <div class="container">
     <h2 class="section-title">Ausgewählte Projekte</h2>
     <div class="project-grid">
-      {% assign refs = site.referenzen | sort: "title" %}
-      {% for ref in refs limit:12 %}
+      {% assign refs = site.referenzen | where: "featured", true | sort: "weight" %}
+      {% for ref in refs %}
       <a href="{{ ref.url | relative_url }}" class="project-card">
         {% if ref.images %}
         <div class="project-card-image">

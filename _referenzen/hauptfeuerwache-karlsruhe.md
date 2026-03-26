@@ -3,6 +3,8 @@ title: "Hauptfeuerwache Karlsruhe"
 slug: "hauptfeuerwache-karlsruhe"
 description: "Neubau der Hauptfeuerwache Karlsruhe"
 weight: 9
+featured: true
+complete: true
 client: "Stadt Karlsruhe"
 architect: "Harder Stumpfl Schramm freie Architekten"
 location: "Karlsruhe"

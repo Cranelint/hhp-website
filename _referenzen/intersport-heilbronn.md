@@ -3,6 +3,8 @@ title: "Intersport, Heilbronn"
 slug: "intersport-heilbronn"
 description: "Logistikerweiterung und Verkaufsstätte"
 weight: 8
+featured: true
+complete: true
 client: "Intersport Deutschland e.G., Heilbronn"
 architect: "Marohn Zipf Köhler Architekten, Stuttgart"
 location: "Heilbronn"

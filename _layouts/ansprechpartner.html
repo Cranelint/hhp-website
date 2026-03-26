@@ -10,18 +10,18 @@ layout: default
 
     <h2 class="section-title">Geschäftsführung</h2>
     <div class="person-grid">
-      <div class="person-card">
+      <div class="person-card person-card--leadership">
         <div class="person-card-header">
-          <div class="person-avatar">ED</div>
+          <div class="person-avatar--leadership" aria-label="Initialen ED">ED</div>
           <div>
             <h3>Dipl.-Ing. Enrico Dammköhler</h3>
             <p class="person-role">Geschäftsführender Gesellschafter</p>
           </div>
         </div>
       </div>
-      <div class="person-card">
+      <div class="person-card person-card--leadership">
         <div class="person-card-header">
-          <div class="person-avatar">TB</div>
+          <div class="person-avatar--leadership" aria-label="Initialen TB">TB</div>
           <div>
             <h3>Dipl.-Ing. Torsten Budwill</h3>
             <p class="person-role">Prokurist</p>
@@ -32,27 +32,27 @@ layout: default
 
     <h2 class="section-title" style="margin-top: var(--space-3xl);">Verwaltung</h2>
     <div class="person-grid">
-      <div class="person-card">
+      <div class="person-card person-card--staff">
         <div class="person-card-header">
-          <div class="person-avatar">MG</div>
+          <div class="person-avatar--staff" aria-label="Initialen MG">MG</div>
           <div>
             <h3>Frau Görig</h3>
             <p class="person-role">Buchhaltung</p>
           </div>
         </div>
       </div>
-      <div class="person-card">
+      <div class="person-card person-card--staff">
         <div class="person-card-header">
-          <div class="person-avatar">SE</div>
+          <div class="person-avatar--staff" aria-label="Initialen SE">SE</div>
           <div>
             <h3>Frau Egler</h3>
             <p class="person-role">Sekretariat</p>
           </div>
         </div>
       </div>
-      <div class="person-card">
+      <div class="person-card person-card--staff">
         <div class="person-card-header">
-          <div class="person-avatar">AL</div>
+          <div class="person-avatar--staff" aria-label="Initialen AL">AL</div>
           <div>
             <h3>Frau Laux</h3>
             <p class="person-role">Sekretariat</p>
@@ -61,14 +61,19 @@ layout: default
       </div>
     </div>
 
-    <div class="info-box" style="margin-top: var(--space-3xl);">
-      <h3>Kontakt</h3>
-      <p>
-        {% include icon.html name="phone" %} Telefon: <a href="tel:+496215916580">+49 621 591658-0</a><br>
-        {% include icon.html name="mail" %} E-Mail: <a href="mailto:info@hhp-sued.de">info@hhp-sued.de</a>
-      </p>
-      <p>HHP Süd Sachverständige für Brandschutz GmbH<br>
-      Ludwigstraße 54 b, 67059 Ludwigshafen am Rhein</p>
+    <div class="cta-block" style="margin-top: var(--space-3xl);">
+      <div class="cta-block-text">
+        <h3>Direkt Kontakt aufnehmen</h3>
+        <p>
+          {% include icon.html name="phone" %} <a href="tel:+496215916580">+49 621 591658-0</a>
+          &ensp;&middot;&ensp;
+          {% include icon.html name="mail" %} <a href="mailto:info@hhp-sued.de">info@hhp-sued.de</a>
+        </p>
+        <p style="margin-top: var(--space-xs); font-size: 0.875rem; color: var(--color-text-light);">
+          HHP Süd Sachverständige für Brandschutz GmbH &middot; Ludwigstraße 54 b, 67059 Ludwigshafen am Rhein
+        </p>
+      </div>
+      <a href="mailto:info@hhp-sued.de" class="btn btn-primary">Anfrage senden</a>
     </div>
   </div>
 </article>
